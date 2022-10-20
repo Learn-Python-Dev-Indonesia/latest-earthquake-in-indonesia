@@ -3,15 +3,7 @@ from bs4 import BeautifulSoup
 
 
 def ekstrasi_data():
-    """
-    Tanggal : 19 Oktober 2022,
-    Waktu : 13:27:28 WIB
-    Magnitudo : 3.4
-    Kedalaman : 5 km
-    Lokasi : LU = 2.06 LU BT 98.98
-    Pusat Gempa : Pusat gempa berada di darat 5 km TimurLaut Tapanuli Utara
-    Dirasakan : Dirasakan (Skala MMI): III Sipoholon, III Tarutung
-    """
+
     try:
         content = requests.get('https://bmkg.go.id')
     except Exception :
@@ -75,3 +67,7 @@ def tampilkan_data(result):
     print(f"koordinat: LS={result['koordinat']['ls']}, BT={result['koordinat']['bt']}")
     print(f"lokasi {result['lokasi']}")
     print(f"dirasakan {result['dirasakan']}")
+
+if __name__ == '__main__':
+    result = ekstrasi_data()
+    tampilkan_data(result)

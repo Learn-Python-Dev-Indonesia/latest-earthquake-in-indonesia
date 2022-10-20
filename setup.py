@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="latestearthquakeinIndonesia",
+    name="latest_earthquake_in_Indonesia_2022",
     version="0.1",
     author="Viko Aldi ",
     author_email="piccoaldi@gmail.com",
