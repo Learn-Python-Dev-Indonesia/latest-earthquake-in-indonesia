@@ -1,6 +1,3 @@
-"""
-https://packaging.python.org/en/latest/tutorials/packaging-projects/?highlight=setup.py%20
-"""
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
